@@ -88,8 +88,6 @@ main {
     gap: 15px; /* Space between image and text */
     overflow: hidden; /* To contain potential text overflow */
     background-image: url("intro.png");
-    opacity: 0.2;
-    /* background-color: #f0f0f0; */
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the entire section */
     background-position: center; /* Position the background in the center */
