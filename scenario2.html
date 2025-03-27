@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Building Evacuation - Blocked Exit - Heat Sense</title>
+    <link rel="stylesheet" href="scenario2.css">
+</head>
+<body>
+    <header>
+        <a href="scenarios.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+        </a>        
+        <h1>Building Evacuation - Blocked Exit</h1>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            <label for="progressBar">Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
+        <section id="slide-objective-situation" class="slide">            
+            <h2>Learning Objective</h2>
+            <p> Learn the correct procedures for evacuating an office building during a fire, especially when a primary exit is blocked.</p>
+            <h2>Initial Situation</h2>
+            <p>You are working on the third floor of a five-story office building in Lucknow, Uttar Pradesh. The fire alarm suddenly goes off, and you hear the building-wide announcement: "Attention, please. There is a fire reported on the second floor. Please evacuate the building using the nearest available exit." You smell faint smoke coming from the hallway towards the main stairwell.</p>
+            <button id="continue-objective-situation">Continue</button>
+        </section>
+
+        <section id="slide-decision1" class="slide hidden">
+            <h2>Decision Point 1: What do you do FIRST?</h2>
+            <div class="choices">
+               </div>
+            <div id="feedback1" class="feedback"></div>
+            <div id="consequence1" class="consequence-message"></div>
+            <button id="continue-decision1" class="hidden">Continue</button>
+            <button id="restart-decision1" class="hidden">Restart</button>           
+        </section>
+
+        <section id="slide-decision2" class="slide hidden">
+            <h2>Decision Point 2: Which action do you take next?</h2>
+            <div class="choices">
+                 </div>            <div id="feedback2" class="feedback"></div>
+            <div id="consequence2" class="consequence-message"></div>
+            <button id="continue-decision2" class="hidden">Continue</button>
+            <button id="restart-decision2" class="hidden">Restart</button>          
+        </section>
+
+        <section id="slide-ending-success" class="slide hidden">
+            <h2>Scenario Ending: Success</h2>
+            <p>Success - Safely Evacuated: The participant successfully evacuated the building using the alternative fire escape.</p>
+            <p id="points-summary"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+        </section>
+
+        <section id="slide-ending-failure1" class="slide hidden">
+            <h2>Scenario Ending: Failure</h2>
+            <p>Failure - Time Wasted: The participant delayed evacuation and potentially put themselves at risk.</p>
+            <p id="points-summary-failure"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+            <button id="restart-ending-failure">Restart Scenario</button>
+        </section>
+
+        <section id="slide-ending-failure2" class="slide hidden">
+            <h2>Scenario Ending: Failure</h2>
+            <p>Failure - Blocked Exit: The participant was unable to find a safe exit and the situation worsened.</p>
+            <p id="points-summary-failure"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+            <button id="restart-ending-failure">Restart Scenario</button>
+        </section>
+
+        <section id="slide-ending-failure3" class="slide hidden">
+            <h2>Scenario Ending: Failure</h2>
+            <p>Failure - Used Elevator: The participant made an unsafe choice by attempting to use the elevator.</p>
+            <p id="points-summary-failure"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+            <button id="restart-ending-failure">Restart Scenario</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <b>Synttax Squad</b>.  Created for <b>GDG on Campus Solution Challenge</b></p>
+        <p>Team Members:
+          <ul class="team-members">
+            <li>Yashraj Rastogi</li>
+            <li>Vanshika Saxena</li>
+            <li>Ananya Yadav</li>
+            <li>Vishesh Sachan</li>
+          </ul>
+        </p>
+    </footer>
+
+    <script src="scenario2.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Ad/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+/* Basic CSS for mobile responsiveness and layout */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(233,251,2);
+    background: linear-gradient(90deg, rgba(233,251,2,1) 0%, rgba(242,152,5,1) 60%);
+}
+
+header {
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*header .logo-container {}*/
+
+header .logo-container img {
+    height:100px;
+    width:100px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5em; /* Adjust as needed */
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+    color: #d90703;
+    font-family: "Tektur", sans-serif;
+    font-weight: bold;
+}
+
+/*header .login-button {}*/
+
+header .login-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#FFF;
+    font-size: large;
+}
+
+header .login-button svg {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+main {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-size:large;
+}
+
+/* Styling for intro, featured, and hotel sections */
+.intro-section,
+.featured-section,
+.hotel-offer-container {
+    width: calc(100% - 30px);
+    /* Adjust width as needed, considering padding */
+    border: 2px solid #fdb504;
+    border-radius: 8px; /* Example border-radius */
+    margin-bottom: 20px; /* Add some spacing between sections */
+    padding: 15px; /* Add some padding inside the sections */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* ...intro section styles ... */
+
+.intro-section {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    border-radius: 8px; /* Ensure border-radius is present */
+    padding: 15px; /* Existing padding */
+    box-sizing: border-box; /* Existing box-sizing */
+    margin-bottom: 20px; /* Existing margin-bottom */
+    width: calc(100% - 30px); /* Existing width */
+    gap: 15px; /* Space between image and text */
+    overflow: hidden; /* To contain potential text overflow */
+    background-image: url("intro.png");
+    opacity: 0.2;
+    /* background-color: #f0f0f0; */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Position the background in the center */
+    min-height: 300px; /* Add a minimum height */
+}
+
+
+
+.intro-paragraph {
+    flex-grow: 1; /* Allow text to take remaining space */
+    height: 185px; /* Set height to match the max height of the image */
+    overflow-y: auto; /* Enable vertical scroll if text overflows */
+    padding: 10px; /* Add some space around the text within its container */
+}
+
+.intro-paragraph p {
+    margin: 0; /* Remove default paragraph margins */
+    white-space: normal; /* Allow text to wrap to enable vertical scroll */
+}
+
+/* ... featured section styling ... */
+
+.featured-section {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center; /* Center items initially */
+    background-image: url("hero.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Position the background in the center */
+    min-height: 300px; /* Add a minimum height */
+}
+
+.featured-text-container {
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Space between text and button */
+}
+
+.learn-more-button {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 10%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hotel-offer-container {
+    position: relative;
+}
+
+.hotel-offer-image {
+    width: 100%;
+    display: block;
+    
+}
+
+.enter-button {
+    position: absolute;
+    top: 90%; /* Adjust as needed to position on the door */
+    left: 50%; /* Adjust as needed to position on the door */
+    transform: translate(-50%, -50%); /* Center the button */
+    background-color: #FF4500; /* Example button color */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for footer */
+    color: #777; /* Muted text color for footer */
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* Separator line above footer */
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;  
+}
+footer ul li {
+    display: flex;
+    list-style: none;
+}
+
+/* Media queries for larger mobile screens */
+@media (min-width: 320px) {
+
+    .intro-section {
+        height: auto; /* Default height, will adjust to image */
+        flex-direction: row;
+        align-items:center;
+        overflow-x: auto; /* Horizontal scroll if needed */
+    }
+
+    .intro-image {
+        flex-shrink: 0;
+        height: 100%; /* Occupy full height of container */
+        object-fit: cover;
+        margin-bottom: 0; /* Remove bottom margin when side-by-side */
+    }
+    
+    .intro-paragraph {
+        white-space: nowrap;
+    }
+
+    .featured-section {
+        flex-direction: row;
+        justify-content: space-between; /* Distribute items horizontally */
+        align-items: center;
+    }
+
+    .hero-image {
+        width: auto; /* Adjust image width when side-by-side */
+        margin-bottom: 0;
+    }
+
+    .featured-text-container {
+        text-align: left; /* Align text to the left when side-by-side */
+        margin: 0 15px; /* Add some horizontal margin */
+    }
+    /*.learn-more-button {}*/
+
+}
+/* Media queries for larger mobile screens */
+@media (min-width: 375px) {
+    .intro-image {
+        margin-bottom: 0; /* Remove bottom margin when side-by-side */
+    }
+    .featured-section {
+        flex-direction: row;
+        justify-content: space-between; /* Distribute items horizontally */
+        align-items: center;
+    }
+    .hero-image {
+        width: auto; /* Adjust image width when side-by-side */
+        margin-bottom: 0;
+    }
+    .featured-text-container {
+        text-align: left; /* Align text to the left when side-by-side */
+        margin: 0 15px; /* Add some horizontal margin */
+    }
+    /*.learn-more-button {}*/
+    
+}

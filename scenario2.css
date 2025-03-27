@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    color: #333;
+    background: rgb(233, 251, 2);
+    background: linear-gradient(90deg, rgba(233, 251, 2, 1) 0%, rgba(242, 152, 5, 1) 60%);
+}
+
+header {
+    /* background-color: #fff; */
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: azure;
+}
+
+header h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Tektur", sans-serif;
+    color: azure;
+    flex-grow: 1;
+    margin: 0;
+}
+
+main {
+    padding: 15px;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progress-container label {
+    margin-right: 10px;
+}
+
+.slide {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.slide h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FF8C00;
+}
+
+.slide p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.choices {
+    margin-top: 10px;
+}
+
+.choices button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    text-align: left;
+    color: black; /* Set the text color of choices to black */
+}
+
+.choices button.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.choices button.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.feedback-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.feedback-message.correct {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.feedback-message.incorrect {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.consequence-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: normal; /* Adjust as needed */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button.restart-button {
+    background-color: #dc3545;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style for the back button at the scenario ending */
+.back-to-list-button {
+    background-color: #28a745; /* Example button color */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-to-list-button:hover {
+    background-color: #5a6268;
+}
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for footer */
+    color: #777; /* Muted text color for footer */
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* Separator line above footer */
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;  
+}
+footer ul li {
+    display: flex;
+    list-style: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Kitchen Grease Fire - Heat Sense</title>
+    <link rel="stylesheet" href="scenario1.css">
+</head>
+<body>
+    <header>
+        <a href="scenarios.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+        </a>
+        <h1>Small Kitchen Grease Fire</h1>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            <label for="progressBar">Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
+        <section id="slide-objective-situation" class="slide">
+            <h2>Learning Objective</h2>
+            <p>Learn to correctly respond to a grease fire in a kitchen.</p>
+            <h2>Initial Situation</h2>
+            <p>You are working in the hotel kitchen and notice flames erupting from a pan on the stove.</p>
+            <button id="continue-objective-situation">Continue</button>
+        </section>
+
+        <section id="slide-decision1" class="slide hidden">
+            <h2>Decision Point 1: What do you do FIRST?</h2>
+            <div class="choices">
+                <button data-choice="A">A) Throw water on the fire.</button>
+                <button data-choice="B">B) Grab a fire extinguisher.</button>
+            </div>
+            <div id="feedback1" class="feedback"></div>
+            <div id="consequence1" class="consequence-message"></div>
+            <button id="continue-decision1" class="hidden">Continue</button>
+            <button id="restart-decision1" class="hidden">Restart</button>
+        </section>
+
+        <section id="slide-decision2" class="slide hidden">
+            <h2>Decision Point 2: Which type of fire extinguisher do you use?</h2>
+            <div class="choices">
+                <button data-choice="A">A) Water extinguisher.</button>
+                <button data-choice="B">B) Class B (or ABC) extinguishers.</button>
+            </div>
+            <div id="feedback2" class="feedback"></div>
+            <div id="consequence2" class="consequence-message"></div>
+            <button id="continue-decision2" class="hidden">Continue</button>
+            <button id="restart-decision2" class="hidden">Restart</button>
+        </section>
+
+        <section id="slide-ending-success" class="slide hidden">
+            <h2>Scenario Ending: Success</h2>
+            <p>You successfully contained the grease fire.</p>
+            <p id="points-summary"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+        </section>
+
+        <section id="slide-ending-failure" class="slide hidden">
+            <h2>Scenario Ending: Failure</h2>
+            <p>The fire either worsened or was not effectively extinguished.</p>
+            <p id="points-summary-failure"></p>
+            <a href="scenarios.html" class="back-to-list-button">Back to Scenarios</a>
+            <button id="restart-ending-failure">Restart Scenario</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Team Members: 
+            <ul class="team-members">
+                <li>Yashraj Rastogi</li>
+                <li>Vanshika Saxena</li>
+                <li>Ananya Yadav</li>
+                <li>Vishesh Sachan</li>
+            </ul>
+        </p>
+    </footer>
+
+    <script src="scenario1.js"></script>
+</body>
+</html>
