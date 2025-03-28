@@ -1,4 +1,4 @@
-alert("Hey user, right now only 'Grease fire' and 'Obstructed Exit' scenarios are working. You will be alble to enter in other senarios very soon.");
+alert("Hey user, right now only 'Grease fire' and 'Obstructed Exit' scenarios are working. You will be able to enter in other scenarios very soon.");
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.scenario-navigation a');
     const scenarioSections = document.querySelectorAll('.scenario-list-section');
