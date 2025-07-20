@@ -49,8 +49,6 @@ The primary goal of this application is to provide a more effective and engaging
 
 * Yashraj Rastogi 
 * Ananya Yadav
-* Vanshika Saxena
-* Vishesh Sachan
 
 ## Future Enhancements 
 
